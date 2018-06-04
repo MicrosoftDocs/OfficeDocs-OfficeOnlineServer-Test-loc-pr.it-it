@@ -1,4 +1,4 @@
-﻿---
+---
 title: Pianificare il server Office Web Apps
 TOCTitle: Pianificare il server Office Web Apps
 ms:assetid: 2e147f11-6f47-46bc-90bf-b2f179958d11
@@ -464,5 +464,5 @@ Se non si utilizza WSUS o System Center Configuration Manager, impostare gli agg
 [Office.com (per la Guida di Office Web Apps su dispositivi desktop o portatili)](https://go.microsoft.com/fwlink/p/?linkid=266657)  
   
 
-[apply-software-updates-to-office-web-apps-server.md](apply-software-updates-to-office-web-apps-server.md)
+[https://technet.microsoft.com/it-it/library/jj966220](apply-software-updates-to-office-web-apps-server.md)
 
