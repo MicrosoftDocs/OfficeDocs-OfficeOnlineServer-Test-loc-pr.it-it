@@ -1,4 +1,4 @@
-﻿---
+---
 title: Panoramica sul server Office Web Apps
 TOCTitle: 'Panoramica: server Office Web Apps'
 ms:assetid: 4b199a88-387f-4121-820d-7af580e2a3e8
@@ -120,5 +120,5 @@ Ulteriori informazioni sui Visualizzatori online sono disponibili nella sezione 
 [Distribuire il server Office Web Apps](deploy-office-web-apps-server.md)  
   
 
-[deploy-office-web-apps-server.md](deploy-office-web-apps-server.md)
+[https://technet.microsoft.com/it-it/library/jj219455](deploy-office-web-apps-server.md)
 
