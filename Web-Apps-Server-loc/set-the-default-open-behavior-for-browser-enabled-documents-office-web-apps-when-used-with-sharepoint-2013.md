@@ -27,7 +27,7 @@ Per aprire un documento di una raccolta documenti di SharePoint 2013, è suffici
 
 Per impostazione predefinita, dopo aver configurato SharePoint 2013 per l'utilizzo del server Office Web Apps, quando si fa clic su un file di Word, PowerPoint, Excel o OneNote il relativo documento viene aperto nel browser. I documenti PDF vengono visualizzati nel Word Web App. Per modificare il comportamento predefinito in modo che i file vengano aperti nelle applicazioni client o nel lettore PDF predefinito, è possibile utilizzare i due metodi seguenti:
 
-  - **Per la farm di SharePoint 2013**   È possibile modificare il comportamento di apertura predefinito in base al tipo di file per la farm di SharePoint 2013 utilizzando i cmdlet Windows PowerShell[New-SPWOPIBinding](new-spwopibinding.md) e [Set-SPWOPIBinding](set-spwopibinding.md). Questi cmdlet consentono inoltre di [modificare il comportamento di documenti PDF](http://go.microsoft.com/fwlink/p/?linkid=330246).
+  - **Per la farm di SharePoint 2013**   È possibile modificare il comportamento di apertura predefinito in base al tipo di file per la farm di SharePoint 2013 utilizzando i cmdlet Windows PowerShell[New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) e [Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps). Questi cmdlet consentono inoltre di [modificare il comportamento di documenti PDF](http://go.microsoft.com/fwlink/p/?linkid=330246).
 
   - **In raccolte siti o raccolte documenti**   Gli utenti e gli amministratori di raccolte siti possono utilizzare la caratteristica OpenInClient di SharePoint 2013 per specificare se i file di Office verranno aperti nell'applicazione client o nel browser. Per modificare questa impostazione, gli utenti possono utilizzare le proprietà della raccolta documenti. Gli amministratori possono invece utilizzare Amministrazione raccolta siti oppure il cmdlet [Enable-SPFeature](https://technet.microsoft.com/it-it/library/ff607803\(v=office.15\)) per abilitare la caratteristica OpenInClient. Per informazioni sui vari metodi in cui è possibile abilitare la caratteristica OpenInClient, vedere la sezione successiva.
 
@@ -45,7 +45,7 @@ Per impostare la caratteristica OpenInClient in SharePoint 2013, utilizzare una 
 
 
 > [!NOTE]
-> In alcune di queste procedure viene utilizzata la Shell di gestione di SharePoint 2013 per eseguire cmdlet di SharePoint. Se si sceglie di utilizzare la console di Windows PowerShell, è necessario aggiungere lo snap-in Microsoft.SharePoint.PowerShell utilizzando il cmdlet <STRONG>Add-PSSnapin</STRONG>. Per ulteriori informazioni sull'utilizzo di Windows PowerShell con SharePoint 2013, vedere <A href="use-windows-powershell-to-administer-sharepoint-2013.md">Utilizzare Windows PowerShell per amministrare SharePoint 2013</A>.
+> In alcune di queste procedure viene utilizzata la Shell di gestione di SharePoint 2013 per eseguire cmdlet di SharePoint. Se si sceglie di utilizzare la console di Windows PowerShell, è necessario aggiungere lo snap-in Microsoft.SharePoint.PowerShell utilizzando il cmdlet <STRONG>Add-PSSnapin</STRONG>. Per ulteriori informazioni sull'utilizzo di Windows PowerShell con SharePoint 2013, vedere <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Utilizzare Windows PowerShell per amministrare SharePoint 2013</A>.
 
 
 
@@ -79,7 +79,7 @@ Per impostare la caratteristica OpenInClient in SharePoint 2013, utilizzare una 
     
 
     > [!NOTE]
-    > Se non si dispone delle autorizzazioni, richiederle all'amministratore responsabile dell'installazione o all'amministratore di SQL Server. Per ulteriori informazioni sulle autorizzazioni di Windows PowerShell, vedere <A href="use-windows-powershell-to-administer-sharepoint-2013.md">Permissions</A> e <A href="https://technet.microsoft.com/it-it/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
+    > Se non si dispone delle autorizzazioni, richiederle all'amministratore responsabile dell'installazione o all'amministratore di SQL Server. Per ulteriori informazioni sulle autorizzazioni di Windows PowerShell, vedere <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> e <A href="https://technet.microsoft.com/it-it/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
 
@@ -157,7 +157,7 @@ Per impostare la caratteristica OpenInClient in SharePoint 2013, utilizzare una 
     
 
     > [!NOTE]
-    > Se non si dispone delle autorizzazioni, richiederle all'amministratore responsabile dell'installazione o all'amministratore di SQL Server. Per ulteriori informazioni sulle autorizzazioni di Windows PowerShell, vedere <A href="use-windows-powershell-to-administer-sharepoint-2013.md">Permissions</A> e <A href="https://technet.microsoft.com/it-it/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
+    > Se non si dispone delle autorizzazioni, richiederle all'amministratore responsabile dell'installazione o all'amministratore di SQL Server. Per ulteriori informazioni sulle autorizzazioni di Windows PowerShell, vedere <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> e <A href="https://technet.microsoft.com/it-it/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
 
@@ -194,11 +194,11 @@ Per impostare la caratteristica OpenInClient in SharePoint 2013, utilizzare una 
 ## Vedere anche
 
 
-[Get-SPWOPIBinding](get-spwopibinding.md)  
+[Get-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps)  
 
 
 [Guida di orientamento al contenuto per il server Office Web Apps](content-roadmap-for-office-web-apps-server.md)  
-[Utilizzare Windows PowerShell per amministrare SharePoint 2013](use-windows-powershell-to-administer-sharepoint-2013.md)  
+[Utilizzare Windows PowerShell per amministrare SharePoint 2013](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps)  
 [Server Office Web Apps](office-web-apps-server.md)  
 
 

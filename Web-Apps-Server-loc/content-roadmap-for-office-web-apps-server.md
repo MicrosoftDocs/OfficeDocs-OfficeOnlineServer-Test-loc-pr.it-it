@@ -111,7 +111,7 @@ Nella tabella riportata di seguito vengono descritte le risorse disponibili per 
 <li><p>Se il server server Office Web Apps dovrà essere usato con SharePoint 2013, vedere <a href="plan-office-web-apps-used-with-sharepoint-2013.md">Pianificare Office Web Apps (utilizzato con SharePoint 2013)</a>.</p></li>
 <li><p>Il <a href="https://technet.microsoft.com/it-it/library/cc263526(v=office.15)">supporto dei browser</a> per Office Web Apps è equivalente a quello per SharePoint 2013.</p></li>
 <li><p>Office Web Apps può essere usato solo dalle applicazioni Web di SharePoint 2013 che usano l'<a href="plan-office-web-apps-used-with-sharepoint-2013.md">autenticazione basata sulle attestazioni</a>.</p></li>
-<li><p>La visualizzazione di file mediante Office Web Apps non prevede alcun costo, mentre è necessario <a href="plan-office-web-apps-used-with-sharepoint-2013.md">acquistare una licenza per la modifica</a> se si vuole <a href="new-officewebappsfarm.md">abilitare Office Web Apps per la modifica</a> quando il server Office Web Apps viene usato con SharePoint 2013 locale.</p></li>
+<li><p>La visualizzazione di file mediante Office Web Apps non prevede alcun costo, mentre è necessario <a href="plan-office-web-apps-used-with-sharepoint-2013.md">acquistare una licenza per la modifica</a> se si vuole <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps">abilitare Office Web Apps per la modifica</a> quando il server Office Web Apps viene usato con SharePoint 2013 locale.</p></li>
 </ul>
 <p><br />
 </p>
@@ -143,7 +143,7 @@ Nella tabella riportata di seguito vengono descritte le risorse disponibili per 
 <td><p>La prima cosa da fare è <a href="deploy-office-web-apps-server.md">preparare i server per l'esecuzione del server Office Web Apps</a>, quindi <a href="deploy-office-web-apps-server.md">installare il server Office Web Apps</a> e applicare l'ultimo aggiornamento del server Office Web Apps. Infine, <a href="deploy-office-web-apps-server.md">installare i Language Pack per il server Office Web Apps</a>.</p>
 <p><br />
 </p>
-<p>Per valutare il funzionamento di server Office Web Apps, è possibile <a href="deploy-office-web-apps-server.md">distribuire una farm di server Office Web Apps a server singolo in un ambiente di testing</a> oppure, se si preferisce qualcosa di più sicuro <a href="e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5(office.15)#singlehttps">distribuire una farm di server Office Web Apps a server singolo che usa il protocollo HTTPS</a>. Se si devono supportare molti utenti, è possibile <a href="e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5(office.15)#multihttps">distribuire una farm di server Office Web Apps con più server e bilanciamento del carico che usa il protocollo HTTPS</a>.</p>
+<p>Per valutare il funzionamento di server Office Web Apps, è possibile <a href="deploy-office-web-apps-server.md">distribuire una farm di server Office Web Apps a server singolo in un ambiente di testing</a> oppure, se si preferisce qualcosa di più sicuro <a href="deploy-office-web-apps-server.md#singlehttps">distribuire una farm di server Office Web Apps a server singolo che usa il protocollo HTTPS</a>. Se si devono supportare molti utenti, è possibile <a href="deploy-office-web-apps-server.md#multihttps">distribuire una farm di server Office Web Apps con più server e bilanciamento del carico che usa il protocollo HTTPS</a>.</p>
 <p><br />
 </p>
 <p>Dopo aver distribuito il server Office Web Apps, è necessario configurare l'host. È possibile configurare <a href="configure-office-web-apps-for-sharepoint-2013.md">SharePoint 2013</a>, <a href="http://go.microsoft.com/fwlink/p/?linkid=256611">Exchange Server 2013</a> e <a href="http://go.microsoft.com/fwlink/p/?linkid=256902">Lync Server 2013</a> per l'uso del server Office Web Apps.</p>
@@ -174,10 +174,10 @@ Nella tabella riportata di seguito vengono descritte le risorse disponibili per 
 <p>Se il server Office Web Apps è stato distribuito per essere usato con SharePoint 2013, per impostazione predefinita i documenti di Office vengono aperti nel browser. È però possibile <a href="set-the-default-open-behavior-for-browser-enabled-documents-office-web-apps-when-used-with-sharepoint-2013.md">modificare questo comportamento in modo da aprire i documenti di Office in un client</a>.</p>
 <p><br />
 </p>
-<p>Se l'organizzazione decide di usare Excel Services invece di Excel Web App per visualizzare le cartelle di lavoro nel browser, è possibile usare il cmdlet di Windows PowerShell<a href="new-spwopisuppressionsetting.md">New-SPWOPISuppressionSetting</a> per disattivare Excel Web App per le cartelle di lavoro di Excel.</p>
+<p>Se l'organizzazione decide di usare Excel Services invece di Excel Web App per visualizzare le cartelle di lavoro nel browser, è possibile usare il cmdlet di Windows PowerShell<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps">New-SPWOPISuppressionSetting</a> per disattivare Excel Web App per le cartelle di lavoro di Excel.</p>
 <p><br />
 </p>
-<p>Se si vuole <a href="configure-office-web-apps-for-sharepoint-2013.md">disconnettere SharePoint 2013 dal server Office Web Apps</a>, usare il cmdlet di Windows PowerShell<a href="remove-spwopibinding.md">Remove-SPWOPIBinding</a>.</p></td>
+<p>Se si vuole <a href="configure-office-web-apps-for-sharepoint-2013.md">disconnettere SharePoint 2013 dal server Office Web Apps</a>, usare il cmdlet di Windows PowerShell<a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps">Remove-SPWOPIBinding</a>.</p></td>
 </tr>
 <tr class="even">
 <td><img src="images/Dn135237.17bfbe9e-7e0e-48dd-887b-b94f8d8f9f22(Office.15).png" title="Icona risoluzione dei problemi" alt="Icona risoluzione dei problemi" /></td>
@@ -192,13 +192,13 @@ Nella tabella riportata di seguito vengono descritte le risorse disponibili per 
 </p>
 <p>server Office Web Apps</p>
 <ul>
-<li><p><a href="windows-powershell-for-office-web-apps-server.md">Windows PowerShell per server Office Web Apps</a></p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/?view=officewebapps-ps">Windows PowerShell per server Office Web Apps</a></p></li>
 </ul>
 <p><br />
 </p>
 <p>SharePoint 2013</p>
 <ul>
-<li><p><a href="windows-powershell-for-office-web-apps-sharepoint-2013.md">Windows PowerShell per Office Web Apps (SharePoint 2013)</a></p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Windows PowerShell per Office Web Apps (SharePoint 2013)</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">

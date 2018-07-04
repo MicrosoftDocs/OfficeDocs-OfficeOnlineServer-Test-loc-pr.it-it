@@ -41,7 +41,7 @@ Quando viene utilizzato con SharePoint 2013 in locale, Office Web Apps fornisce 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="windows-powershell-for-office-web-apps-sharepoint-2013.md">Windows PowerShell per Office Web Apps (SharePoint 2013)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Windows PowerShell per Office Web Apps (SharePoint 2013)</a></p></td>
 <td><p>Vengono elencati i cmdlet di Windows PowerShell necessari per configurare SharePoint 2013 per l'utilizzo di Office Web Apps.</p></td>
 </tr>
 </tbody>

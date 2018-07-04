@@ -340,7 +340,7 @@ Di seguito è riportato un elenco di indicazioni da tenere presenti man mano che
 
   - **Pianificare le comunicazioni in arrivo e in uscita.** In una distribuzione Internet, instradare tutte le comunicazioni in uscita tramite un dispositivo NAT. In una farm con più server, gestire tutte le comunicazioni in arrivo con un servizio di bilanciamento del carico.
 
-  - **Verificare che tutti i server nella farm di server Office Web Apps appartengano a un dominio e facciano parte della stessa unità organizzativa.** Utilizzare il parametro **FarmOU** nel cmdlet [New-OfficeWebAppsFarm](new-officewebappsfarm.md) per impedire ad altri server non appartenenti all'unità organizzativa di unirsi alla farm.
+  - **Verificare che tutti i server nella farm di server Office Web Apps appartengano a un dominio e facciano parte della stessa unità organizzativa.** Utilizzare il parametro **FarmOU** nel cmdlet [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) per impedire ad altri server non appartenenti all'unità organizzativa di unirsi alla farm.
 
   - **Utilizzare il protocollo HTTPS (Hypertext Transfer Protocol Secure) per tutte le richieste in arrivo.**
 
@@ -398,13 +398,13 @@ Quando si utilizza il protocollo HTTP, il traffico dal dispositivo di bilanciame
 
 ## Limitare i server che possono entrare a far parte della farm di server Office Web Apps in base all'appartenenza all'unità organizzativa
 
-È possibile impedire ai server non autorizzati di entrare a far parte di una farm di server Office Web Apps creando un'unità organizzativa per tali server e specificando il parametro FarmOU durante la creazione della farm. Per ulteriori informazioni sul parametro FarmOU, vedere [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+È possibile impedire ai server non autorizzati di entrare a far parte di una farm di server Office Web Apps creando un'unità organizzativa per tali server e specificando il parametro FarmOU durante la creazione della farm. Per ulteriori informazioni sul parametro FarmOU, vedere [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 ## Limitare l'accesso host per il server Office Web Apps mediante l'elenco Consenti
 
 L'elenco Consenti è una caratteristica di sicurezza che impedisce a host indesiderati di connettersi a una farm di server Office Web Apps e di utilizzarla per operazioni su file senza il consenso dell'utente. Aggiungendo i domini che contengono host approvati all'elenco Consenti, è possibile limitare gli host da cui il server Office Web Apps accetta richieste di operazioni su file, ad esempio il recupero di file o metadati e le modifiche di file.
 
-È possibile aggiungere domini all'elenco Consenti dopo la creazione della farm di server Office Web Apps. Per informazioni sull'aggiunta di domini all'elenco Consenti, vedere [New-OfficeWebAppsHost](new-officewebappshost.md).
+È possibile aggiungere domini all'elenco Consenti dopo la creazione della farm di server Office Web Apps. Per informazioni sull'aggiunta di domini all'elenco Consenti, vedere [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
 <table>
 <thead>
@@ -422,19 +422,19 @@ L'elenco Consenti è una caratteristica di sicurezza che impedisce a host indesi
 
 ## Pianificazione di Visualizzatori online con il server Office Web Apps
 
-Per impostazione predefinita, la caratteristica Visualizzatori online viene abilitata dopo l'installazione del server Office Web Apps. Consultare le linee guida riportate di seguito se si prevede di utilizzare Visualizzatori online nell'organizzazione. In alcuni casi è consigliabile disabilitare determinate caratteristiche di Visualizzatori online. In queste linee guida si fa riferimento a parametri impostati mediante i cmdlet Windows PowerShell[New-OfficeWebAppsFarm](new-officewebappsfarm.md) e [Set-OfficeWebAppsFarm](set-officewebappsfarm.md).
+Per impostazione predefinita, la caratteristica Visualizzatori online viene abilitata dopo l'installazione del server Office Web Apps. Consultare le linee guida riportate di seguito se si prevede di utilizzare Visualizzatori online nell'organizzazione. In alcuni casi è consigliabile disabilitare determinate caratteristiche di Visualizzatori online. In queste linee guida si fa riferimento a parametri impostati mediante i cmdlet Windows PowerShell[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) e [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
 
 ## Considerazioni sulla sicurezza per Visualizzatori online
 
 I file da visualizzare in un Web browser mediante Visualizzatori online non devono richiedere l'autenticazione. In altri termini, i file devono essere disponibili pubblicamente poiché la caratteristica Visualizzatori online non è in grado di eseguire l'autenticazione durante il recupero di file. È consigliabile impostare la farm di server Office Web Apps utilizzata per Visualizzatori online in modo che sia in grado di accedere alla rete Intranet o a Internet, ma non a entrambe. Il server Office Web Apps non è infatti in grado di distinguere le richieste di URL Intranet e Internet. Un utente su Internet potrebbe ad esempio richiedere un URL della rete Intranet, causando un rischio per la sicurezza se viene visualizzato un documento interno.
 
-Per lo stesso motivo, se il server Office Web Apps è stato impostato per la sola connessione a Internet, è consigliabile disabilitare il supporto UNC in Visualizzatori online. Per disabilitare il supporto UNC, impostare il parametro OpenFromUncEnabled su False mediante il cmdlet Windows PowerShell[New-OfficeWebAppsFarm](new-officewebappsfarm.md) (per nuove farm) o [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (per farm esistenti).
+Per lo stesso motivo, se il server Office Web Apps è stato impostato per la sola connessione a Internet, è consigliabile disabilitare il supporto UNC in Visualizzatori online. Per disabilitare il supporto UNC, impostare il parametro OpenFromUncEnabled su False mediante il cmdlet Windows PowerShell[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (per nuove farm) o [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (per farm esistenti).
 
 Come misura di sicurezza aggiuntiva, la caratteristica Visualizzatori online consente di visualizzare solo file di Office con dimensioni massime di 10 MB.
 
 ## Opzioni di configurazione per Visualizzatori online
 
-È possibile configurare Visualizzatori online utilizzando i parametri Windows PowerShell seguenti nel cmdlet [New-OfficeWebAppsFarm](new-officewebappsfarm.md) (per nuove farm) o [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (per farm esistenti).
+È possibile configurare Visualizzatori online utilizzando i parametri Windows PowerShell seguenti nel cmdlet [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (per nuove farm) o [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (per farm esistenti).
 
   - **OpenFromUrlEnabled**   Attiva o disattiva Visualizzatori online. Questo parametro controlla Visualizzatori online per i file con percorsi URL e UNC. Per impostazione predefinita, questo parametro è impostato su False (disabilitato) quando si crea una nuova farm di server Office Web Apps.
 
