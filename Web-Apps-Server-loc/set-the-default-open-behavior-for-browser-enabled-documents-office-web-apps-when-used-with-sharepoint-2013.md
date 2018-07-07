@@ -1,5 +1,5 @@
 ﻿---
-title: Impostare il comportamento di apertura predefinito per documenti abilitati per i browser (utilizzo di Office Web Apps con SharePoint 2013)
+title: Comportamento di apertura predefinito per documenti (Office Web Apps)
 TOCTitle: Impostare il comportamento di apertura predefinito per documenti abilitati per i browser
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
 ms:mtpsurl: https://technet.microsoft.com/it-it/library/Ee837425(v=office.15)
