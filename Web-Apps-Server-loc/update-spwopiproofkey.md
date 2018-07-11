@@ -9,19 +9,21 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Update-SPWOPIProofKey
+# Update-SPWOPIProofKey 
 
- 
+_**Si applica a:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
 
-_**Si applica a:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Ultima modifica dell'argomento:**2015-03-09_
+_**Ultima modifica dell'argomento:** 2015-03-09
 
 Aggiorna la chiave pubblica utilizzata per la connessione all'applicazione WOPI nella farm di SharePoint corrente in cui viene eseguito il cmdlet.
 
 ## Sintassi
 
-    Update-SPWOPIProofKey [-AssignmentCollection <SPAssignmentCollection>] [-ServerName <String>]
+```PowerShell
+      Update-SPWOPIProofKey 
+  [-AssignmentCollection <SPAssignmentCollection>] 
+  [-ServerName <String>]
+```
 
 ## Descrizione dettagliata
 
@@ -53,13 +55,11 @@ SharePoint Management Shell
 <td><p>Facoltativo</p></td>
 <td><p>Microsoft.SharePoint.PowerShell.SPAssignmentCollection</p></td>
 <td><p>Consente di gestire gli oggetti ai fini della corretta eliminazione dalla memoria. Oggetti quali <strong>SPWeb</strong> o <strong>SPSite</strong> richiedono quantità di memoria elevate e per utilizzarli negli script Windows PowerShell è necessario gestire la memoria in modo appropriato. Tramite l'oggetto <strong>SPAssignment</strong> è possibile assegnare oggetti a una variabile ed eliminarli quando è necessario liberare memoria. Gli oggetti <strong>SPWeb</strong>, <strong>SPSite</strong> o <strong>SPSiteAdministration</strong> utilizzati vengono automaticamente eliminati dalla memoria se non viene utilizzato un insieme di assegnazioni o il parametro <strong>Global</strong>.</p>
-<div class="alert">
 
 > [!NOTE]
 > Quando viene utilizzato il parametro <STRONG>Global</STRONG> tutti gli oggetti vengono memorizzati nell'area di archiviazione globale. Se gli oggetti non vengono utilizzati immediatamente o eliminati dalla memoria tramite il comando <STRONG>Stop-SPAssignment</STRONG>, può verificarsi una condizione di memoria insufficiente.
 
-
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><p><strong>ServerName</strong></p></td>
@@ -79,7 +79,9 @@ SharePoint Management Shell
 
 \--------------ESEMPIO-----------------
 
+```PowerShell
     Update-SPWOPIProofKey -ServerName "Server.corp.Contoso.com"
+```
 
 In questo esempio viene ottenuta la chiave pubblica corrente per l'applicazione WOPI (ad esempio un server che esegue il server Office Web Apps) e viene aggiornata la chiave archiviata nella farm di SharePoint.
 
