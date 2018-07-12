@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Distribuire il server Office Web Apps
+# Distribuire il server Office Web Apps 
 
- 
+_**Si applica a:** Office Web Apps Server_
 
-_**Si applica a:**Office Web Apps Server_
-
-_**Ultima modifica dell'argomento:**2017-10-05_
+_**Ultima modifica dell'argomento:** 2017-10-05_
 
 **Riepilogo:** spiega come distribuire il server Office Web Apps in locale per l'uso con SharePoint 2013 e Lync Server 2013.
 
@@ -85,11 +83,15 @@ Windows Server 2008 R2, Windows Server 2012 e Windows Server 2012 R2 hanno prere
 
 2.  Aprire il prompt di Windows PowerShell come amministratore ed eseguire i comandi seguenti per installare i ruoli e i servizi richiesti.
     
+    ```PowerShell
         Import-Module ServerManager
+    ```
     
     Eseguire quindi il comando seguente:
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-WebServer,Web-Common-Http,Web-Static-Content,Web-App-Dev,Web-Asp-Net,Web-Net-Ext,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,Web-Security,Web-Windows-Auth,Web-Filtering,Web-Stat-Compression,Web-Dyn-Compression,Web-Mgmt-Console,Ink-Handwriting,IH-Ink-Support,NET-Framework,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-Win-CFAC
+    ```
     
     Se richiesto, riavviare il server.
 
@@ -97,7 +99,9 @@ Windows Server 2008 R2, Windows Server 2012 e Windows Server 2012 R2 hanno prere
 
 1.  Aprire il prompt di Windows PowerShell come amministratore ed eseguire il comando seguente per installare i ruoli e i servizi richiesti.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     Se richiesto, riavviare il server.
 
@@ -109,7 +113,9 @@ Windows Server 2008 R2, Windows Server 2012 e Windows Server 2012 R2 hanno prere
 
 2.  Aprire il prompt di Windows PowerShell come amministratore ed eseguire il comando seguente per installare i ruoli e i servizi richiesti.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     Se richiesto, riavviare il server.
 
@@ -217,7 +223,9 @@ Questa è la procedura da eseguire se si vuole distribuire il server Office Web 
 
 Usare il comando **New-OfficeWebAppsFarm** per creare una nuova farm di server Office Web Apps costituita da un solo server, come illustrato nell'esempio seguente.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp -EditingEnabled
+```
 
 **Parametri**
 
@@ -235,10 +243,13 @@ Se viene visualizzato il messaggio di errore "500 - Eccezioni servizio Web" o "5
 
 Al termine della creazione della farm, i relativi dettagli vengono visualizzati nel prompt di Windows PowerShell. Per verificare che il server Office Web Apps sia installato e configurato correttamente, usare un Web browser per accedere all'URL di individuazione del server Office Web Apps, come indicato nell'esempio seguente. L'URL di individuazione è il parametro *InternalUrl* specificato al momento della configurazione della farm di server Office Web Apps, seguito da **/hosting/discoperse**, ad esempio:
 
+```
     http://servername/hosting/discovery
+```
 
 Se il server Office Web Apps funziona come previsto, nel Web browser verrà visualizzato un file XML di individuazione COPI (Web Application Open Platform Interface Protocol). Le prime righe del file dovrebbero avere un aspetto simile al seguente:
 
+```XML
     <?xml version="1.0" encoding="utf-8" ?> 
     - <wopi-discovery>
     - <net-zone name="internal-http">
@@ -247,6 +258,7 @@ Se il server Office Web Apps funziona come previsto, nel Web browser verrà visu
     <action name="view" ext="xls" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsb" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+```
 
 ## Passaggio 3: configurare l'host
 
@@ -267,7 +279,9 @@ Questa farm di server Office Web Apps fornirà le funzionalità di Office Web Ap
 
 Usare il comando **New-OfficeWebAppsFarm** per creare una nuova farm di server Office Web Apps costituita da un solo server, come illustrato nell'esempio seguente.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate" -EditingEnabled
+```
 
 **Parametri**
 
@@ -287,11 +301,13 @@ Se viene visualizzato il messaggio di errore "500 - Eccezioni servizio Web" o "5
 
 Al termine della creazione della farm, i relativi dettagli vengono visualizzati nel prompt di Windows PowerShell. Per verificare che il server Office Web Apps sia installato e configurato correttamente, usare un Web browser per accedere all'URL di individuazione del server Office Web Apps, come indicato nell'esempio seguente. L'URL di individuazione è il parametro *InternalUrl* specificato al momento della configurazione della farm di server Office Web Apps, seguito da **/hosting/discovery**, ad esempio:
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 Se il server Office Web Apps funziona come previsto, nel Web browser verrà visualizzato un file XML di individuazione WOPI (Web Application Open Platform Interface Protocol). Le prime righe del file dovrebbero avere un aspetto simile al seguente:
 
-``` 
+```XML 
 <?xml version="1.0" encoding="UTF-8"?>
 <wopi-discovery><net-zone 
 name="internal-https"><app name="Excel" checkLicense="true" 
@@ -300,15 +316,11 @@ name="view"
 urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
 default="true" ext="ods"/><action name="view" 
 urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
-default="true" ext="xls"/><action name="view"
- 
+default="true" ext="xls"/><action name="view" 
 ```
-
 
 > [!NOTE]
 > A seconda delle impostazioni di sicurezza del Web browser, è possibile che venga visualizzato un messaggio in cui si richiede di selezionare <STRONG>Mostra tutto il contenuto</STRONG> prima che vengano visualizzati i contenuti del file XML di individuazione.
-
-
 
 ## Passaggio 3: configurare l'host
 
@@ -333,7 +345,9 @@ Prima di iniziare, verificare che il servizio di bilanciamento del carico sia co
 
 Usare il comando **New-OfficeWebAppsFarm** per creare una nuova farm di server Office Web Apps nel primo server, come illustrato nell'esempio seguente.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -SSLOffloaded -EditingEnabled
+```
 
 **Parametri**
 
@@ -353,7 +367,9 @@ Se viene visualizzato il messaggio di errore "500 - Eccezioni servizio Web" o "5
 
 Quando nel primo server è in esecuzione il server Office Web Apps, eseguire il comando **New-OfficeWebAppsMachine** su ogni server che si vuole aggiungere alla farm di server Office Web Apps. Per il parametro **–MachineToJoin** usare il nome computer di uno dei server già presenti nella farm di server Office Web Apps. Ad esempio, se server1.contoso.com è già nella farm, usare il comando seguente:
 
+```PowerShell
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+```
 
 È possibile trovare altre informazioni su questi parametri in [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
@@ -361,18 +377,19 @@ Quando nel primo server è in esecuzione il server Office Web Apps, eseguire il 
 
 Al termine della creazione della farm, i relativi dettagli vengono visualizzati nel prompt di Windows PowerShell. Per verificare che il server Office Web Apps sia installato e configurato correttamente, usare un Web browser per accedere all'URL di individuazione del server Office Web Apps, come indicato nell'esempio seguente. L'URL di individuazione è il parametro *InternalUrl* specificato al momento della configurazione della farm di server Office Web Apps, seguito da **/hosting/discovery**. Ad esempio:
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 Se il server Office Web Apps funziona come previsto, nel Web browser verrà visualizzato un file XML di individuazione WOPI (Web Application Open Platform Interface Protocol). Le prime righe del file dovrebbero avere un aspetto simile al seguente:
 
+```XML
     <?xml version="1.0" encoding="UTF-8"?>
     <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
-
+```
 
 > [!NOTE]
 > A seconda delle impostazioni di sicurezza del Web browser, è possibile che venga visualizzato un messaggio in cui si richiede di selezionare <STRONG>Mostra tutto il contenuto</STRONG> prima che vengano visualizzati i contenuti del file XML di individuazione.
-
-
 
 ## Passaggio 4: configurare l'host
 
@@ -388,17 +405,17 @@ Se le caratteristiche di .NET Framework 3.5 sono state installate e successivame
 
 **Per Windows Server 2008 R2**
 
-   ```
+   ```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru 
-   ```
-
-  ```
+   
     iisreset /restart /noforce
-  ```
+   ```
 
 **Per Windows Server 2012 o Windows Server 2012 R2**
 
+   ```PowerShell
     dism /online /enable-feature /featurename:IIS-ASPNET45
+   ``` 
 
 ## Vedere anche
 

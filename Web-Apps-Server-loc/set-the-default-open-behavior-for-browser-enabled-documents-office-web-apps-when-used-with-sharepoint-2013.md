@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Impostare il comportamento di apertura predefinito per documenti abilitati per i browser (utilizzo di Office Web Apps con SharePoint 2013)
+# Impostare il comportamento di apertura predefinito per documenti abilitati per i browser (utilizzo di Office Web Apps con SharePoint 2013) 
 
- 
+_**Si applica a:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Si applica a:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Ultima modifica dell'argomento:**2016-12-16_
+_**Ultima modifica dell'argomento:** 2016-12-16_
 
 **Riepilogo:** in questo articolo viene illustrato come configurare il comportamento di apertura predefinito per documenti di Office in raccolte siti di SharePoint e raccolte documenti.
 
@@ -106,24 +104,34 @@ Per impostare la caratteristica OpenInClient in SharePoint 2013, utilizzare una 
 3.  Al prompt dei comandi di Windows PowerShell digitare uno dei comandi seguenti:
     
       - Per abilitare la caratteristica OpenInClient per una raccolta siti specifica, ovvero per aprire i documenti nell'applicazione client, digitare il comando seguente:
-        
+
+      ```PowerShell  
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+      ```
+      ```  
         Dove *\<SiteCollURL\>* è l'URL della raccolta siti.
+      ```
     
       - Per abilitare la caratteristica OpenInClient per tutte le raccolte siti, ovvero per aprire i documenti nell'applicazione client, digitare il comando seguente:
-        
+
+      ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
+      ```
     
       - Per disabilitare la caratteristica OpenInClient per una raccolta siti specifica, ovvero per aprire i documenti nel browser, digitare il comando seguente:
-        
+
+      ```PowerShell  
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+      ```
+      ```  
         Dove *\<SiteCollURL\>* è l'URL della raccolta siti .
+      ```
     
       - Per disabilitare la caratteristica OpenInClient per tutte le raccolte siti, ovvero per aprire i documenti nel browser, digitare il comando seguente:
-        
+
+      ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
+      ```
 
  **Impostazione del comportamento di apertura predefinito per una raccolta documenti mediante la pagina Impostazioni avanzate raccolta documenti**
 
@@ -183,7 +191,9 @@ Per impostare la caratteristica OpenInClient in SharePoint 2013, utilizzare una 
 
 3.  Al prompt dei comandi di Windows PowerShell digitare il comando seguente:
     
+      ```PowerShell
         Get-SPWeb -site <SiteCollURL> | % {$_.Lists} | where {$_.IrmEnabled -eq $true} | % {$_.DefaultItemOpen =[Microsoft.Sharepoint.DefaultItemOpen]::<DefaultItemOpenSetting>; $_.Update()}
+      ```
     
     dove:
     
