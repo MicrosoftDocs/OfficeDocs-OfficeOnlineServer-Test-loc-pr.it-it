@@ -11,9 +11,9 @@ ms.translationtype: HT
 
 # Impostare il comportamento di apertura predefinito per documenti abilitati per i browser (utilizzo di Office Web Apps con SharePoint 2013) 
 
-_**Si applica a:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>Si applica a:</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Ultima modifica dell'argomento:** 2016-12-16_
+_<strong>Ultima modifica dell'argomento:</strong>2016-12-16_
 
 **Riepilogo:** in questo articolo viene illustrato come configurare il comportamento di apertura predefinito per documenti di Office in raccolte siti di SharePoint e raccolte documenti.
 

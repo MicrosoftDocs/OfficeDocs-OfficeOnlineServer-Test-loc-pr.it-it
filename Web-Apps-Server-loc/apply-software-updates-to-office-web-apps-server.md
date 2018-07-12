@@ -11,9 +11,9 @@ ms.translationtype: HT
 
 # Applicare aggiornamenti software al server Office Web Apps 
 
-_**Si applica a:** Office Web Apps Server_
+_<strong>Si applica a:</strong>Office Web Apps Server_
 
-_**Ultima modifica dell'argomento:** 2016-12-16_
+_<strong>Ultima modifica dell'argomento:</strong>2016-12-16_
 
 **Riepilogo:** in questo articolo viene illustrato come applicare gli aggiornamenti software a una server farm di Office Web Apps.
 
