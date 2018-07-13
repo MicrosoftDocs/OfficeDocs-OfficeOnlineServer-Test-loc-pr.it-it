@@ -95,18 +95,8 @@ Di seguito sono innanzitutto elencate alcune operazioni da NON eseguire durante 
 
 Per informazioni dettagliate sugli elementi che è invece necessario installare, vedere la tabella che segue.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /> <strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>server Office Web Apps è disponibile solo per il download da <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Volume Licensing Service Center (VLSC)</a>. Per scaricare server Office Web Apps è necessario disporre di una licenza in un contratto multilicenza Office Professional Plus 2013, Office Standard 2013 o Office per Mac 2011. Il download si trova in tali prodotti Office sul portale VLSC.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> server Office Web Apps è disponibile solo per il download da <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Volume Licensing Service Center (VLSC)</a>. Per scaricare server Office Web Apps è necessario disporre di una licenza in un contratto multilicenza Office Professional Plus 2013, Office Standard 2013 o Office per Mac 2011. Il download si trova in tali prodotti Office sul portale VLSC.
 
 
 ### Download, ruoli del server e caratteristiche necessari per il server Office Web Apps
@@ -406,18 +396,8 @@ L'elenco Consenti è una caratteristica di sicurezza che impedisce a host indesi
 
 È possibile aggiungere domini all'elenco Consenti dopo la creazione della farm di server Office Web Apps. Per informazioni sull'aggiunta di domini all'elenco Consenti, vedere [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /> <strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Se non si aggiungono domini all'elenco Consenti, il server Office Web Apps consentirà agli host di qualsiasi dominio di inviare richieste di file. Non lasciare vuoto questo elenco se la farm di server Office Web Apps è accessibile da Internet. In caso contrario, chiunque potrà utilizzare la farm di server Office Web Apps per visualizzare e modificare contenuto.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Se non si aggiungono domini all'elenco Consenti, il server Office Web Apps consentirà agli host di qualsiasi dominio di inviare richieste di file. Non lasciare vuoto questo elenco se la farm di server Office Web Apps è accessibile da Internet. In caso contrario, chiunque potrà utilizzare la farm di server Office Web Apps per visualizzare e modificare contenuto.
 
 
 ## Pianificazione di Visualizzatori online con il server Office Web Apps

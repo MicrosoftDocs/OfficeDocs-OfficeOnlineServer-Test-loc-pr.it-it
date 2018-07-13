@@ -23,19 +23,9 @@ _**Ultima modifica dell'argomento:**2017-05-26_
 
 server Office Web Apps è un nuovo prodotto Office server che fornisce le versioni basate su browser di Word, PowerPoint, Excel e OneNote. Una singola farm di Office Web Apps Server può supportare gli utenti che accedono ai file Office tramite SharePoint 2013, Lync Server 2013, cartelle condivise e siti Web. Il nuovo modello di distribuzione autonoma significa che è possibile gestire gli aggiornamenti a una farm di Server Office Web Apps indipendentemente dagli altri prodotti Server Office distribuite nell'organizzazione.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /> <strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Questo articolo fa parte della <a href="content-roadmap-for-office-web-apps-server.md">Guida di orientamento al contenuto per il server Office Web Apps</a>. Utilizzare tale guida come punto di partenza per accedere ad articoli, download e video utili per distribuire e gestire server Office Web Apps.<br />
-<strong>Per informazioni relative a Office Web Apps su dispositivi desktop o mobili,</strong> cercare &quot;Office Web Apps&quot; su <a href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Questo articolo fa parte della <a href="content-roadmap-for-office-web-apps-server.md">Guida di orientamento al contenuto per il server Office Web Apps</a>. Utilizzare tale guida come punto di partenza per accedere ad articoli, download e video utili per distribuire e gestire server Office Web Apps.<br />
+<strong>Per informazioni relative a Office Web Apps su dispositivi desktop o mobili,</strong> cercare &quot;Office Web Apps&quot; su <a href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
 
 Contenuto dell'articolo:
