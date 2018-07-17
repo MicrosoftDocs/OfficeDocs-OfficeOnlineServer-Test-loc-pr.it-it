@@ -121,9 +121,13 @@ Se il comando restituisce **False**, eseguire i comandi seguenti per impostare i
 
 ```PowerShell
     $config = (Get-SPSecurityTokenServiceConfig)
+```
 
+```PowerShell
     $config.AllowOAuthOverHttp = $true
+```
 
+```PowerShell
     $config.Update()
 ```
 
