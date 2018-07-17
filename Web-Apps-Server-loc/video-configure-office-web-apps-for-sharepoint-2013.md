@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Si applica a:**Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>Si applica a:</strong>Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Ultima modifica dell'argomento:**2016-12-16_
+_<strong>Ultima modifica dell'argomento:</strong>2016-12-16_
 
 **Riepilogo:** illustra nel dettaglio i nove passaggi principali da eseguire per configurare una farm di server di Office Web Apps che funzioni con SharePoint 2013.
 

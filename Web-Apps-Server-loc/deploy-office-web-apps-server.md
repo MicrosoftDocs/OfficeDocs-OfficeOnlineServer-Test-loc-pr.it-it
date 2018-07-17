@@ -11,9 +11,9 @@ ms.translationtype: HT
 
 # Distribuire il server Office Web Apps 
 
-_**Si applica a:** Office Web Apps Server_
+_<strong>Si applica a:</strong>Office Web Apps Server_
 
-_**Ultima modifica dell'argomento:** 2017-10-05_
+_<strong>Ultima modifica dell'argomento:</strong>2017-10-05_
 
 **Riepilogo:** spiega come distribuire il server Office Web Apps in locale per l'uso con SharePoint 2013 e Lync Server 2013.
 
