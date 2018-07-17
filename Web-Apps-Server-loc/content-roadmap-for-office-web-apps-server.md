@@ -27,19 +27,9 @@ Il server Office Web Apps è un nuovo prodotto server di Office che fornisce ver
 
 I professionisti IT possono trovare informazioni utili su Outlook Web App in [Novità per Outlook Web App in Exchange 2013](http://go.microsoft.com/fwlink/?linkid=282325).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /><strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Questo articolo è rivolto agli amministratori che distribuiscono e gestiscono server Office Web Apps per la propria organizzazione.<br />
-<strong>Se si necessita di assistenza per Office Web Apps su un desktop o un dispositivo mobile</strong>, vedere invece <a href="http://go.microsoft.com/fwlink/p/?linkid=269811">Introduzione a Office Web Apps in Office 365</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Questo articolo è rivolto agli amministratori che distribuiscono e gestiscono server Office Web Apps per la propria organizzazione.<br />
+<strong>Se si necessita di assistenza per Office Web Apps su un desktop o un dispositivo mobile</strong>, vedere invece <a href="http://go.microsoft.com/fwlink/p/?linkid=269811">Introduzione a Office Web Apps in Office 365</a>.
 
 
 Nella tabella riportata di seguito vengono descritte le risorse disponibili per i professionisti IT che distribuiscono e gestiscono il server Office Web Apps.

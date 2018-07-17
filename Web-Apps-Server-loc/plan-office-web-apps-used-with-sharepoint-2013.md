@@ -23,19 +23,9 @@ _**Ultima modifica dell'argomento:**2016-12-16_
 
 Per pianificare l'utilizzo di Office Web Apps con SharePoint 2013 in locale, è necessario consultare le informazioni sul supporto dei browser, sui requisiti di autenticazione di SharePoint e sulle licenze per la visualizzazione e la modifica dei file di Office mediante Office Web Apps. Sarà quindi possibile decidere se SharePoint 2013 deve utilizzare il Web browser o un'applicazione client quando un utente apre i file di Office da una raccolta documenti di SharePoint 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /><strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Questo articolo fa parte della <a href="content-roadmap-for-office-web-apps-server.md">Guida di orientamento al contenuto per il server Office Web Apps</a>. Utilizzare tale guida come punto di partenza per accedere ad articoli, download e video utili per distribuire e gestire server Office Web Apps.<br />
-<strong>Per informazioni su Office Web Apps su dispositivi desktop o mobili</strong>, cercare &quot;Office Web Apps&quot; su <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Questo articolo fa parte della <a href="content-roadmap-for-office-web-apps-server.md">Guida di orientamento al contenuto per il server Office Web Apps</a>. Utilizzare tale guida come punto di partenza per accedere ad articoli, download e video utili per distribuire e gestire server Office Web Apps.<br />
+<strong>Per informazioni su Office Web Apps su dispositivi desktop o mobili</strong>, cercare &quot;Office Web Apps&quot; su <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
 
 Contenuto dell'articolo:

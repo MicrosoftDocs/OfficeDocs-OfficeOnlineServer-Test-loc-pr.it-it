@@ -21,19 +21,9 @@ _**Ultima modifica dell'argomento:** 2016-12-16_
 
 Dopo l'uscita di una nuova versione del server Office Web Apps, Microsoft rende disponibile una serie di aggiornamenti software per aumentare il livello di sicurezza, le prestazioni e l'affidabilità dei server. In questo articolo viene descritto come applicare gli aggiornamenti software a singoli server in una farm di server Office Web Apps.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /><strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Questo articolo fa parte della <a href="content-roadmap-for-office-web-apps-server.md">Guida di orientamento al contenuto per il server Office Web Apps</a>. Utilizzare tale guida come punto di partenza per accedere ad articoli, download e video utili per distribuire e gestire server Office Web Apps.<br />
-<strong>Per informazioni su Office Web Apps su dispositivi desktop o mobili</strong>, cercare &quot;Office Web Apps&quot; su <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Questo articolo fa parte della <a href="content-roadmap-for-office-web-apps-server.md">Guida di orientamento al contenuto per il server Office Web Apps</a>. Utilizzare tale guida come punto di partenza per accedere ad articoli, download e video utili per distribuire e gestire server Office Web Apps.<br />
+<strong>Per informazioni su Office Web Apps su dispositivi desktop o mobili</strong>, cercare &quot;Office Web Apps&quot; su <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
 > [!WARNING]
 > L'applicazione degli aggiornamenti del server Office Web Apps mediante il processo di aggiornamento automatico non è supportata per il server Office Web Apps. Gli aggiornamenti a un server Office Web Apps devono infatti essere applicati in modo specifico, secondo quanto descritto in questo articolo. Se invece gli aggiornamenti del server Office Web Apps vengono applicati automaticamente, gli utenti potrebbero non essere in grado di visualizzare o modificare documenti in Office Web Apps. In tal caso, sarà necessario generare di nuovo la farm di server Office Web Apps. Per rigenerare una farm, è necessario rimuovere il server Office Web Apps dalla farm utilizzando <A href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</A>, disinstallare il server Office Web Apps tramite Installazione applicazioni, quindi reinstallare il server Office Web Apps seguendo la procedura descritta in <A href="deploy-office-web-apps-server.md">Distribuire il server Office Web Apps</A>. Dopo aver completato la reinstallazione, applicare l'aggiornamento seguendo la procedura descritta in questo articolo.<BR>È importante esaminare la linee guida disponibili in <A href="plan-office-web-apps-server.md">Planning updates for Office Web Apps Server</A> e definire un processo di aggiornamento per la farm di server Office Web Apps.

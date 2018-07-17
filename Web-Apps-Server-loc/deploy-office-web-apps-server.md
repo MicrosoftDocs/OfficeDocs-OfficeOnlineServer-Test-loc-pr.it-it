@@ -170,44 +170,19 @@ Per installare i Language Pack, eseguire la procedura seguente:
 
 4.  Al termine dell'installazione del server Office Web Apps, scegliere **Chiudi**.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /><strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Per installare i Language Pack dopo la creazione della farm di server Office Web Apps, è necessario rimuovere il server dalla farm, installarvi il Language Pack, quindi aggiungere nuovamente il server alla farm.</p></li>
-<li><p>Perché un Language Pack funzioni correttamente, deve essere installato in tutti i server della farm.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> <ul>
+> <li><p>Per installare i Language Pack dopo la creazione della farm di server Office Web Apps, è necessario rimuovere il server dalla farm, installarvi il Language Pack, quindi aggiungere nuovamente il server alla farm.</p></li>
+> <li><p>Perché un Language Pack funzioni correttamente, deve essere installato in tutti i server della farm.</p></li>
+> </ul>
 
 ## Distribuire la farm di server Office Web Apps
 
 Eseguire le procedure illustrate in una delle tre sezioni seguenti, a seconda del tipo di farm di server Office Web Apps che si vuole creare.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219455.tip(Office.15).gif" title="Suggerimento" alt="Suggerimento" /><strong>Suggerimento:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Se Windows PowerShell non riconosce il cmdlet <strong>New-OfficeWebAppsFarm</strong> quando viene eseguito, può essere necessario importare il modulo <strong>OfficeWebApps</strong> utilizzando il comando seguente:<br />
-<code>Import-Module -Name OfficeWebApps</code></td>
-</tr>
-</tbody>
-</table>
-
+> [!TIP]
+> Se Windows PowerShell non riconosce il cmdlet <strong>New-OfficeWebAppsFarm</strong> quando viene eseguito, può essere necessario importare il modulo <strong>OfficeWebApps</strong> utilizzando il comando seguente:<br />
+<code>Import-Module -Name OfficeWebApps</code>
 
 ## Distribuire una farm di server Office Web Apps a server singolo che usa HTTP
 
