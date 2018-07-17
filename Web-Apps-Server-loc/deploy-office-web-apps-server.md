@@ -380,11 +380,13 @@ Se le caratteristiche di .NET Framework 3.5 sono state installate e successivame
 
 **Per Windows Server 2008 R2**
 
-   ```PowerShell
+```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru 
-   
+```
+
+```PowerShell
     iisreset /restart /noforce
-   ```
+```
 
 **Per Windows Server 2012 o Windows Server 2012 R2**
 
