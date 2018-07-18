@@ -11,9 +11,9 @@ ms.translationtype: HT
 
 # Distribuire il server Office Web Apps 
 
-_**Si applica a:** Office Web Apps Server_
+_<strong>Si applica a:</strong>Office Web Apps Server_
 
-_**Ultima modifica dell'argomento:** 2017-10-05_
+_<strong>Ultima modifica dell'argomento:</strong>2017-10-05_
 
 **Riepilogo:** spiega come distribuire il server Office Web Apps in locale per l'uso con SharePoint 2013 e Lync Server 2013.
 
@@ -380,11 +380,13 @@ Se le caratteristiche di .NET Framework 3.5 sono state installate e successivame
 
 **Per Windows Server 2008 R2**
 
-   ```PowerShell
+```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru 
-   
+```
+
+```PowerShell
     iisreset /restart /noforce
-   ```
+```
 
 **Per Windows Server 2012 o Windows Server 2012 R2**
 
