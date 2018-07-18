@@ -1,4 +1,4 @@
-﻿---
+---
 title: Comportamento di apertura predefinito per documenti (Office Web Apps)
 TOCTitle: Impostare il comportamento di apertura predefinito per documenti abilitati per i browser
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
@@ -108,9 +108,9 @@ Per impostare la caratteristica OpenInClient in SharePoint 2013, utilizzare una 
       ```PowerShell  
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
       ```
-      ```  
-        Dove *\<SiteCollURL\>* è l'URL della raccolta siti.
-      ```
+
+      Dove *\<SiteCollURL\>* è l'URL della raccolta siti.
+      
     
       - Per abilitare la caratteristica OpenInClient per tutte le raccolte siti, ovvero per aprire i documenti nell'applicazione client, digitare il comando seguente:
 
@@ -123,9 +123,9 @@ Per impostare la caratteristica OpenInClient in SharePoint 2013, utilizzare una 
       ```PowerShell  
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
       ```
-      ```  
-        Dove *\<SiteCollURL\>* è l'URL della raccolta siti .
-      ```
+      
+      Dove *\<SiteCollURL\>* è l'URL della raccolta siti .
+      
     
       - Per disabilitare la caratteristica OpenInClient per tutte le raccolte siti, ovvero per aprire i documenti nel browser, digitare il comando seguente:
 
